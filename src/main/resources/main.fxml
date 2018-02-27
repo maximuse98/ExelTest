@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <top>
+      <AnchorPane prefHeight="70.0" prefWidth="682.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="22.0" layoutY="24.0" prefHeight="17.0" prefWidth="36.0" text="Файл:" />
+            <TextField fx:id="labelDirectory" editable="false" layoutX="72.0" layoutY="20.0" prefHeight="25.0" prefWidth="192.0" />
+            <Button fx:id="buttonDirectory" layoutX="280.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#onDirectory" prefHeight="25.0" prefWidth="57.0" text="Выбор" />
+            <Button fx:id="okButton" layoutX="622.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#onOk" prefHeight="25.0" prefWidth="46.0" text="ОК" />
+            <TextField fx:id="mainRowField" layoutX="426.0" layoutY="20.0" prefHeight="25.0" prefWidth="47.0" />
+            <Label layoutX="374.0" layoutY="24.0" prefHeight="17.0" prefWidth="52.0" text="Шапка" />
+            <ImageView fx:id="imageStatus" fitHeight="33.0" fitWidth="47.0" layoutX="565.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true"/>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="164.0" prefWidth="693.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableMain" layoutX="1.0" layoutY="-6.0" onMouseClicked="#onListClick" prefHeight="171.0" prefWidth="692.0">
+            </TableView>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <AnchorPane prefHeight="376.0" prefWidth="682.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="Label1" layoutX="14.0" layoutY="18.0" prefHeight="17.0" prefWidth="140.0" text="Test" visible="false" />
+            <Label fx:id="Label2" layoutX="14.0" layoutY="46.0" prefHeight="17.0" prefWidth="140.0" text="Test" visible="false" />
+            <Label fx:id="Label3" layoutX="14.0" layoutY="74.0" prefHeight="17.0" prefWidth="140.0" text="Test" visible="false" />
+            <Label fx:id="Label4" layoutX="14.0" layoutY="102.0" prefHeight="17.0" prefWidth="140.0" text="Test" visible="false" />
+            <Label fx:id="Label5" layoutX="14.0" layoutY="130.0" prefHeight="17.0" prefWidth="140.0" text="Test" visible="false" />
+            <Label fx:id="Label6" layoutX="14.0" layoutY="158.0" prefHeight="17.0" prefWidth="140.0" text="Test" visible="false" />
+            <Label fx:id="Label7" layoutX="14.0" layoutY="186.0" prefHeight="17.0" prefWidth="140.0" text="Test" visible="false" />
+            <Label fx:id="Label8" layoutX="14.0" layoutY="214.0" prefHeight="17.0" prefWidth="140.0" text="Test" visible="false" />
+            <Label fx:id="Label9" layoutX="14.0" layoutY="242.0" prefHeight="17.0" prefWidth="140.0" text="Test" visible="false" />
+            <Label fx:id="Label10" layoutX="14.0" layoutY="270.0" prefHeight="17.0" prefWidth="140.0" text="Test" visible="false" />
+            <TextField fx:id="Field1" layoutX="161.0" layoutY="14.0" visible="false" />
+            <TextField fx:id="Field2" layoutX="161.0" layoutY="42.0" visible="false" />
+            <TextField fx:id="Field3" layoutX="161.0" layoutY="70.0" visible="false" />
+            <TextField fx:id="Field4" layoutX="161.0" layoutY="98.0" visible="false" />
+            <TextField fx:id="Field5" layoutX="161.0" layoutY="126.0" visible="false" />
+            <TextField fx:id="Field6" layoutX="161.0" layoutY="154.0" visible="false" />
+            <TextField fx:id="Field7" layoutX="161.0" layoutY="182.0" visible="false" />
+            <TextField fx:id="Field8" layoutX="161.0" layoutY="210.0" visible="false" />
+            <TextField fx:id="Field9" layoutX="161.0" layoutY="238.0" visible="false" />
+            <TextField fx:id="Field10" layoutX="161.0" layoutY="266.0" visible="false" />
+            <Button fx:id="addButton" visible="false" layoutX="492.0" layoutY="303.0" mnemonicParsing="false" onMouseClicked="#add" prefHeight="25.0" prefWidth="79.0" text="Добавить" />
+            <Label fx:id="Label11" layoutX="341.0" layoutY="18.0" prefHeight="17.0" prefWidth="140.0" text="Label" visible="false" />
+            <Label fx:id="Label12" layoutX="341.0" layoutY="46.0" prefHeight="17.0" prefWidth="140.0" text="Label" visible="false" />
+            <Label fx:id="Label13" layoutX="341.0" layoutY="74.0" prefHeight="17.0" prefWidth="140.0" text="Label" visible="false" />
+            <Label fx:id="Label14" layoutX="341.0" layoutY="102.0" prefHeight="17.0" prefWidth="140.0" text="Label" visible="false" />
+            <Label fx:id="Label15" layoutX="341.0" layoutY="130.0" prefHeight="17.0" prefWidth="140.0" text="Label" visible="false" />
+            <Label fx:id="Label16" layoutX="341.0" layoutY="158.0" prefHeight="17.0" prefWidth="140.0" text="Label" visible="false" />
+            <Label fx:id="Label17" layoutX="341.0" layoutY="186.0" prefHeight="17.0" prefWidth="140.0" text="Label" visible="false" />
+            <TextField fx:id="Field11" layoutX="497.0" layoutY="14.0" visible="false" />
+            <TextField fx:id="Field12" layoutX="497.0" layoutY="42.0" visible="false" />
+            <TextField fx:id="Field13" layoutX="497.0" layoutY="70.0" visible="false" />
+            <TextField fx:id="Field14" layoutX="497.0" layoutY="98.0" visible="false" />
+            <TextField fx:id="Field15" layoutX="497.0" layoutY="126.0" visible="false" />
+            <TextField fx:id="Field16" layoutX="497.0" layoutY="154.0" visible="false" />
+            <TextField fx:id="Field17" layoutX="497.0" layoutY="182.0" prefHeight="25.0" prefWidth="150.0" visible="false" />
+            <Button fx:id="findButton" visible="false" layoutX="585.0" layoutY="303.0" mnemonicParsing="false" onMouseClicked="#onFound" prefHeight="25.0" prefWidth="77.0" text="Найти" />
+            <Label fx:id="Label18" layoutX="341.0" layoutY="214.0" prefHeight="17.0" prefWidth="140.0" text="Label" visible="false" />
+            <Label fx:id="Label19" layoutX="341.0" layoutY="242.0" prefHeight="17.0" prefWidth="140.0" text="Label" visible="false" />
+            <Label fx:id="Label20" layoutX="341.0" layoutY="270.0" prefHeight="17.0" prefWidth="140.0" text="Label" visible="false" />
+            <TextField fx:id="Field18" layoutX="497.0" layoutY="210.0" prefHeight="25.0" prefWidth="150.0" text="Label" visible="false" />
+            <TextField fx:id="Field19" layoutX="497.0" layoutY="238.0" prefHeight="25.0" prefWidth="150.0" text="Label" visible="false" />
+            <TextField fx:id="Field20" layoutX="497.0" layoutY="266.0" prefHeight="25.0" prefWidth="150.0" text="Label" visible="false" />
+            <Button fx:id="delete" layoutX="398.0" layoutY="303.0" mnemonicParsing="false" onAction="#onDelete" prefHeight="25.0" prefWidth="80.0" text="Удалить" visible="false" />
+            <Button fx:id="change" layoutX="302.0" layoutY="303.0" mnemonicParsing="false" onAction="#onChange" prefHeight="25.0" prefWidth="79.0" text="Изменить" visible="false" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
